@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">TO DO LIST</h1>
+    </header>
+    <main class="main">
+        <h2 class="main__explanation">Qu'avez-vous prévu aujourd'hui&nbsp;?</h2>
+        <div class="task-input-container">
+            <form class="newTask">
+                <div class="newTask__input-area">
+                    <label class="newTask-label" for="newTask">Saisissez une nouvelle tâche&nbsp;:</label>
+                    <input class="newTask-input" type="text" placeholder="Ex. Comprendre le DOM JS" id="newTask">
+                </div>
+                <button class="button new-task-btn" type="button" id="createTask">Ajouter une nouvelle tâche</button>
+            </form>
+            <div>
+                <p class="errorDisplay error">Le champ est vide</p>
+            </div>
+        </div>
+        <ul class="tasks-list">
+            <li class="default-item">Aucun élément à afficher pour le moment
+            </li>
+        </ul>
+    </main>
+    <script src="/assets/scripts/main.js"></script>
+</body>
+</html>
